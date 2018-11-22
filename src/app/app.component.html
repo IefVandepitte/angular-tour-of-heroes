@@ -1,0 +1,18 @@
+<!--template van het component-->
+<!--The double curly braces are Angular's interpolation binding syntax.-->
+<!--This interpolation binding presents the component's title property value inside the HTML header tag-->
+
+<h1>Welkom op de  {{ title }}!</h1>
+<!-- heroescomponent toevoegen  -->
+<!--vervangen door routing-->
+<!--<app-heroes></app-heroes>-->
+<!--A routerLink attribute is set to "/heroes",
+the string that the router matches to the route to HeroesComponent.
+ The routerLink is the selector for the RouterLink directive that turns user clicks into router navigations.
+It's another of the public directives in the RouterModule.-->
+<nav>
+  <a routerLink="/heroes">Helden</a>
+  <a routerLink="/dashboard">Dashboard</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
